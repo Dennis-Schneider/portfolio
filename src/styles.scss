@@ -1,1 +1,15 @@
-/* You can add global styles to this file, and also import other style files */
+:root {
+  --dark-blue: #141d2f;
+  --white: #ffffff;
+}
+
+* {
+  margin: 0;
+  box-sizing: border-box;
+  color: var(--white);
+  overflow-x: hidden;
+}
+
+.bg {
+  background-color: var(--dark-blue);
+}
