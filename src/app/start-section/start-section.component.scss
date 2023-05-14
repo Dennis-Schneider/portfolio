@@ -73,3 +73,28 @@ section {
     }
   }
 }
+
+.ss-contact-line {
+  display: flex;
+  justify-content: space-between;
+  align-items: end;
+  position: relative;
+  z-index: 3;
+  padding-right: 100px;
+
+  hr {
+    width: 100px;
+    height: 0;
+    border: 2px solid #4b47ff;
+  }
+
+  .sscl-left {
+    display: flex;
+    align-items: center;
+    gap: 42px;
+  }
+
+  .sscl-right {
+    writing-mode: vertical-rl;
+  }
+}
