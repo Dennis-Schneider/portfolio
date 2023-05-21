@@ -7,10 +7,9 @@ section {
   padding: 50px 0;
 
   .menu-item {
-    animation: all 1s ease-in-out;
     position: relative;
     p {
-      width: 40vw;
+      width: 30vw;
       text-align: center;
       font-size: 108px;
       padding-bottom: 15px;
@@ -33,6 +32,16 @@ section {
     &:hover {
       .border-left {
         top: 98%;
+        transition: 0.4s;
+
+        border-width: 0 0 0 0;
+      }
+      .border-bottom {
+        right: 0;
+        left: 50%;
+        transition: 0.5s;
+        transition-delay: 0.4s;
+        transition-property: left right;
       }
     }
   }
