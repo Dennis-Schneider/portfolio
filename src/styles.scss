@@ -1,9 +1,16 @@
 :root {
+  // colors
   --blue: #5988ff;
   --cream: #fffcf3;
+  // geo
+  --menu-height-d: 90px;
 }
 
 * {
   margin: 0;
   box-sizing: border-box;
+}
+
+body {
+  background-color: var(--cream);
 }

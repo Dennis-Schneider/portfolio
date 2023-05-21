@@ -1,0 +1,39 @@
+section {
+  height: calc(100vh - var(--menu-height-d));
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  padding: 50px 0;
+
+  .menu-item {
+    animation: all 1s ease-in-out;
+    position: relative;
+    p {
+      width: 40vw;
+      text-align: center;
+      font-size: 108px;
+      padding-bottom: 15px;
+    }
+    .border-left {
+      position: absolute;
+      bottom: 0;
+      top: 50%;
+      border-width: 0 0 4px 4px;
+      border-style: solid;
+    }
+    .border-bottom {
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      right: 90%;
+      border-width: 0 0 4px 4px;
+      border-style: solid;
+    }
+    &:hover {
+      .border-left {
+        top: 98%;
+      }
+    }
+  }
+}
