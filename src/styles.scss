@@ -2,6 +2,8 @@
   // colors
   --blue: #5988ff;
   --cream: #fffcf3;
+  --white: #ffffff;
+  --black: #000000;
   // geo
   --menu-height-d: 90px;
 }
@@ -9,6 +11,7 @@
 * {
   margin: 0;
   box-sizing: border-box;
+  font-family: sans-serif;
 }
 
 body {

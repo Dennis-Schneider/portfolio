@@ -7,8 +7,7 @@ import { Component } from '@angular/core';
 })
 export class HeaderComponent {
   menuVisible = false;
-  toggleActiveState() {
+  toggleMenu() {
     this.menuVisible = !this.menuVisible;
-    console.log(this.menuVisible);
   }
 }

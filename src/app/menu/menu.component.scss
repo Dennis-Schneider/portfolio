@@ -1,15 +1,15 @@
-section {
+#menu {
   height: calc(100vh - var(--menu-height-d));
   display: flex;
   flex-direction: column;
   justify-content: space-around;
   align-items: center;
-  padding: 50px 0;
+  padding: 100px 0;
 
   .menu-item {
     position: relative;
+    width: 50vw;
     p {
-      width: 30vw;
       text-align: center;
       font-size: 108px;
       padding-bottom: 15px;
@@ -32,17 +32,25 @@ section {
     &:hover {
       .border-left {
         top: 98%;
-        transition: 0.4s;
-
+        transition: 0.2s;
         border-width: 0 0 0 0;
       }
       .border-bottom {
         right: 0;
         left: 50%;
-        transition: 0.5s;
-        transition-delay: 0.4s;
+        transition: 0.25s;
+        transition-delay: 0.2s;
         transition-property: left right;
       }
     }
+  }
+  .black-corner {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 0;
+    height: 0;
+    border-bottom: 10vw solid var(--black);
+    border-right: 75vw solid transparent;
   }
 }
