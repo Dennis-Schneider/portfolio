@@ -1,0 +1,13 @@
+section {
+  max-width: 100vw;
+  .content {
+    display: flex;
+    .image {
+      max-width: 30vw;
+      padding: 50px;
+      img {
+        width: 530px;
+      }
+    }
+  }
+}
