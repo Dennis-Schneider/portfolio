@@ -1,5 +1,5 @@
 section {
-  padding-top: 250px;
+  padding-top: 150px;
   height: 100vh;
   width: max-content;
   display: flex;
@@ -7,6 +7,7 @@ section {
   align-items: center;
   flex-direction: column;
   margin: auto;
+  overflow-y: hidden;
   .headline {
     display: flex;
     justify-content: center;
@@ -42,8 +43,7 @@ section {
     }
   }
   .contact-line {
-    width: 100vw;
-    padding: 100px;
+    width: 100%;
     display: flex;
     justify-content: space-between;
     align-items: end;
