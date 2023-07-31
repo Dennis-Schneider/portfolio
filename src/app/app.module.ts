@@ -7,6 +7,10 @@ import { HeaderComponent } from './header/header.component';
 import { StartSectionComponent } from './start-section/start-section.component';
 import { MenuComponent } from './menu/menu.component';
 import { AboutMeSectionComponent } from './about-me-section/about-me-section.component';
+import { SkillsSectionComponent } from './skills-section/skills-section.component';
+import { PortfolioSectionComponent } from './portfolio-section/portfolio-section.component';
+import { ContactSectionComponent } from './contact-section/contact-section.component';
+import { FooterComponent } from './footer/footer.component';
 
 @NgModule({
   declarations: [
@@ -14,13 +18,14 @@ import { AboutMeSectionComponent } from './about-me-section/about-me-section.com
     HeaderComponent,
     StartSectionComponent,
     MenuComponent,
-    AboutMeSectionComponent
+    AboutMeSectionComponent,
+    SkillsSectionComponent,
+    PortfolioSectionComponent,
+    ContactSectionComponent,
+    FooterComponent,
   ],
-  imports: [
-    BrowserModule,
-    AppRoutingModule
-  ],
+  imports: [BrowserModule, AppRoutingModule],
   providers: [],
-  bootstrap: [AppComponent]
+  bootstrap: [AppComponent],
 })
-export class AppModule { }
+export class AppModule {}
