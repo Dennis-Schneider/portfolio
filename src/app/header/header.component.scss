@@ -160,6 +160,8 @@
   .menu-item {
     position: relative;
     width: 50vw;
+    max-width: 980px;
+
     p {
       font-family: "Syne";
       font-weight: 700;

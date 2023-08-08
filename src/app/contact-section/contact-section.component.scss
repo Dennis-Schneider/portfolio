@@ -21,14 +21,17 @@
       display: flex;
       flex-direction: column;
       align-items: center;
+      width: min(530px, 40vw);
       margin: auto;
-      width: 530px;
       gap: 25px;
       form {
         display: flex;
+        width: 100%;
         flex-direction: column;
-        width: 80%;
-        gap: 25px;
+        gap: 42px;
+        input {
+          height: 48px;
+        }
         input,
         textarea {
           background-color: var(--black);
@@ -85,4 +88,10 @@
   textarea:valid {
     outline: 3px var(--white) solid;
   }
+}
+
+button {
+  border-color: var(--white);
+  color: var(--white);
+  margin: auto;
 }
