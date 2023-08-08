@@ -11,6 +11,8 @@ import { SkillsSectionComponent } from './skills-section/skills-section.componen
 import { PortfolioSectionComponent } from './portfolio-section/portfolio-section.component';
 import { ContactSectionComponent } from './contact-section/contact-section.component';
 import { FooterComponent } from './footer/footer.component';
+import { FormsModule } from '@angular/forms';
+import { ReactiveFormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -24,7 +26,7 @@ import { FooterComponent } from './footer/footer.component';
     ContactSectionComponent,
     FooterComponent,
   ],
-  imports: [BrowserModule, AppRoutingModule],
+  imports: [BrowserModule, AppRoutingModule, FormsModule, ReactiveFormsModule],
   providers: [],
   bootstrap: [AppComponent],
 })
