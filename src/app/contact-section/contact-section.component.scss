@@ -81,7 +81,8 @@
   }
 
   input:valid,
-  input:focus {
+  input:focus,
+  textarea:valid {
     outline: 3px var(--white) solid;
   }
 }
