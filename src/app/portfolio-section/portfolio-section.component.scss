@@ -19,6 +19,13 @@
     filter: saturate(0);
     &:hover {
       filter: saturate(1);
+
+      img {
+        animation: 10s ease zoomin;
+        -webkit-animation: 10s ease zoomin;
+        -o-animation: 10s ease zoomin;
+        -moz--o-animation: 10s ease zoomin;
+      }
       .outline-left {
         border: 5px solid black;
       }
@@ -26,10 +33,13 @@
         left: 0;
         opacity: 100%;
       }
+      .project-img-div {
+        overflow: hidden;
+      }
     }
     .project-img-container {
       position: relative;
-      width: 80vw;
+      width: 50vw;
       margin: 0 40px 0 0;
       .project-img {
         width: 100%;
@@ -59,14 +69,7 @@
       left: -5%;
       opacity: 0;
       transition: all ease 0.5s;
-      .subline {
-        font-size: 23px;
-        color: var(--blue);
-        font-weight: 400;
-        line-height: 28px;
-        letter-spacing: 0em;
-        text-align: left;
-      }
+
       button {
         padding: 20px 60px 20px 60px;
         gap: 10px;
@@ -102,5 +105,14 @@
         text-align: end;
       }
     }
+  }
+}
+
+@keyframes zoomin {
+  0% {
+    transform: scale(1, 1);
+  }
+  100% {
+    transform: scale(1.15, 1.15);
   }
 }
