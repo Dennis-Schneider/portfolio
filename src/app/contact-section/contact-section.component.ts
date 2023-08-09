@@ -11,17 +11,23 @@ export class ContactSectionComponent {
   @ViewChild('femail') femail!: ElementRef;
   @ViewChild('fmessage') fmessage!: ElementRef;
   @ViewChild('fbutton') fbutton!: ElementRef;
+
   async sendMail() {
     console.log('sending mail', this.myForm);
     let nameField = this.fname.nativeElement;
     let emailField = this.femail.nativeElement;
     let messageField = this.fmessage.nativeElement;
     let sendButton = this.fbutton.nativeElement;
+    let sendSuccess = document.getElementById('sendSuccess');
 
     nameField.disabled = true;
     emailField.disabled = true;
     messageField.disabled = true;
     sendButton.disabled = true;
+
+    if (sendSuccess != null) {
+      sendSuccess.classList.remove('d-none');
+    }
 
     let fd = new FormData();
     fd.append('name', nameField.value);
@@ -40,9 +46,14 @@ export class ContactSectionComponent {
     emailField.value = '';
     messageField.value = '';
 
-    nameField.disabled = false;
-    emailField.disabled = false;
-    messageField.disabled = false;
-    sendButton.disabled = false;
+    setTimeout(() => {
+      if (sendSuccess != null) {
+        sendSuccess.classList.add('d-none');
+        nameField.disabled = false;
+        emailField.disabled = false;
+        messageField.disabled = false;
+        sendButton.disabled = false;
+      }
+    }, 2000);
   }
 }
