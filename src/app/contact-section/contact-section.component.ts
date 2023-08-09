@@ -8,31 +8,40 @@ import { Component, ElementRef, ViewChild } from '@angular/core';
 export class ContactSectionComponent {
   @ViewChild('myForm') myForm!: ElementRef;
   @ViewChild('fname') fname!: ElementRef;
+  @ViewChild('femail') femail!: ElementRef;
   @ViewChild('fmessage') fmessage!: ElementRef;
   @ViewChild('fbutton') fbutton!: ElementRef;
-  sendMail() {
+  async sendMail() {
     console.log('sending mail', this.myForm);
     let nameField = this.fname.nativeElement;
+    let emailField = this.femail.nativeElement;
     let messageField = this.fmessage.nativeElement;
     let sendButton = this.fbutton.nativeElement;
 
     nameField.disabled = true;
+    emailField.disabled = true;
     messageField.disabled = true;
     sendButton.disabled = true;
 
     let fd = new FormData();
-    fd.append('name', '');
-    fd.append('message', '');
+    fd.append('name', nameField.value);
+    fd.append('email', emailField.value);
+    fd.append('message', messageField.value);
 
-    fetch(
-      'https://w01883ec.kasserver.com/dennis-schneider.org/send_mail/send_mail.php',
+    await fetch(
+      'https://dennis-schneider.developerakademie.net/send_mail/send_mail.php',
       {
         method: 'POST',
         body: fd,
       }
     );
 
+    nameField.value = '';
+    emailField.value = '';
+    messageField.value = '';
+
     nameField.disabled = false;
+    emailField.disabled = false;
     messageField.disabled = false;
     sendButton.disabled = false;
   }
