@@ -216,9 +216,24 @@
   .menu-footer-content {
     padding: 0 100px;
     background-color: var(--black);
+    display: flex;
+    justify-content: space-between;
+    height: 12vh;
     h2 {
       position: relative;
-      top: -50px;
+      bottom: 60px;
+    }
+    p {
+      position: relative;
+      bottom: 5vh;
+    }
+    .menu-footer-r {
+      display: flex;
+      align-items: center;
+      gap: 15px;
+      img {
+        height: 25px;
+      }
     }
   }
 }
