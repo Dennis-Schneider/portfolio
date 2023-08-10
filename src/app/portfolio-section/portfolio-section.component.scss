@@ -16,6 +16,10 @@
   .project {
     display: flex;
     align-items: center;
+    justify-content: center;
+    width: clamp(80%, 100%, 1440px);
+    margin: auto;
+    gap: 80px;
     filter: saturate(0);
     &:hover {
       filter: saturate(1);
@@ -39,8 +43,7 @@
     }
     .project-img-container {
       position: relative;
-      width: 50vw;
-      margin: 0 40px 0 0;
+      width: clamp(500px, 50%, 800px);
       .project-img {
         width: 100%;
         aspect-ratio: 4/3;
@@ -68,6 +71,7 @@
       gap: 15px;
       left: -5%;
       opacity: 0;
+      width: clamp(500px, 50%, 800px);
       transition: all ease 0.5s;
     }
   }
@@ -78,7 +82,8 @@
       flex-direction: column;
       align-items: end;
       text-align: end;
-      right: 0%;
+      right: -2%;
+      width: clamp(500px, 50%, 800px);
       left: unset;
     }
     &:hover {
@@ -87,7 +92,7 @@
         border: 5px solid black;
       }
       .column-2 {
-        right: 3%;
+        right: 1%;
         opacity: 100%;
         left: unset;
         text-align: end;

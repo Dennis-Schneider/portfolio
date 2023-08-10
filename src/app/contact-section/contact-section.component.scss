@@ -120,13 +120,6 @@ button {
   }
 }
 
-// .input-required,
-// .input-okay {
-//   position: absolute;
-//   right: 25px;
-//   top: 10px;
-// }
-
 input[required]:valid,
 textarea[required]:valid {
   background: #f3f8ed url(./../../assets/icons/input-okay.svg) no-repeat center
