@@ -71,7 +71,7 @@
   }
   input:focus + label,
   input:valid + label,
-  input:valid + label,
+  input:not(:placeholder-shown) + label,
   textarea:focus + label,
   textarea:valid + label {
     color: rgba(255, 255, 255, 0.722);
@@ -126,8 +126,8 @@ textarea[required]:valid {
     right 3%;
 }
 
-input[required]:invalid:focus,
-textarea[required]:invalid:focus {
+input[required]:invalid:not(:placeholder-shown),
+textarea[required]:invalid:not(:placeholder-shown) {
   background: #f3f8ed url(./../../assets/icons/required.svg) no-repeat center
     right 3%;
 }

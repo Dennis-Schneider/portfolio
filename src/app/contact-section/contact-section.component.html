@@ -11,15 +11,37 @@
             <h3>Your message has been sent!</h3>
           </div>
           <div class="field-holder">
-            <input type="text" name="name" id="fname" #fname required />
+            <input
+              type="text"
+              name="name"
+              placeholder=" "
+              id="fname"
+              #fname
+              required
+            />
             <label for="fname">Your name</label>
           </div>
           <div class="field-holder">
-            <input type="email" name="email" id="femail" placeholder=" " #femail required />
+            <input
+              type="email"
+              name="email"
+              placeholder=" "
+              id="femail"
+              placeholder=" "
+              #femail
+              required
+            />
             <label for="femail">Your mail</label>
           </div>
           <div class="field-holder">
-            <textarea name="message" rows="8" id="fmessage" #fmessage required></textarea>
+            <textarea
+              name="message"
+              rows="8"
+              placeholder=" "
+              id="fmessage"
+              #fmessage
+              required
+            ></textarea>
             <label class="textarea" for="fmessage">Your message</label>
           </div>
           <button #fbutton type="submit">Send message</button>
