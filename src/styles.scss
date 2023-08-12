@@ -12,6 +12,7 @@
   margin: 0;
   box-sizing: border-box;
   font-family: sans-serif;
+  scroll-behavior: smooth;
 }
 
 h1 {
@@ -69,6 +70,11 @@ button {
   display: flex;
 }
 
+.center {
+  justify-content: center;
+  align-items: center;
+}
+
 .subline {
   font-size: 23px;
   color: var(--blue);
@@ -79,6 +85,11 @@ button {
 }
 .bold {
   font-weight: 800;
+}
+
+.mailto {
+  text-decoration: none;
+  color: unset;
 }
 
 /* syne-regular - latin */
