@@ -155,20 +155,19 @@
   flex-direction: column;
   justify-content: space-between;
   align-items: center;
-  padding: 100px 0 0 0;
+  padding: 10vh 0 15vh 0;
   transition: top 0.3s;
   gap: 50px;
 
   .menu-item {
     position: relative;
-    width: 50vw;
-    max-width: 980px;
+    width: clamp(320px, 70vw, 760px);
 
     p {
       font-family: "Syne";
       font-weight: 700;
       text-align: center;
-      font-size: 96px;
+      font-size: clamp(3rem, 2.143rem + 4.29vw, 6rem);
       padding-bottom: 15px;
     }
     .border-left {
@@ -211,8 +210,12 @@
   bottom: 0;
   left: 0;
   .black-corner {
-    border-bottom: 10vw solid var(--black);
+    border-bottom: 7vw solid var(--black);
     border-right: 100vw solid transparent;
+    position: absolute;
+    bottom: 10vh;
+    left: 0;
+    right: 0;
   }
   .menu-footer-content {
     position: absolute;
@@ -223,7 +226,7 @@
     background-color: var(--black);
     display: flex;
     justify-content: space-between;
-    height: 12vh;
+    height: 10vh;
 
     h2 {
       position: relative;
