@@ -1,0 +1,24 @@
+.legal-notice {
+  padding: 150px 100px;
+  h1 {
+    text-align: left;
+    line-height: 120%;
+  }
+
+  .imprint {
+    padding: 150px 0 100px 0;
+  }
+}
+
+.dpp {
+  h3 {
+    padding: 50px 0 16px 0;
+  }
+  ul {
+    padding-top: 1.2rem;
+    padding-bottom: 1.2rem;
+    * {
+      font-size: 23px;
+    }
+  }
+}

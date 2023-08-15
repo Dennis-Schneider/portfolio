@@ -1,10 +1,6 @@
 <section id="header">
-  <img src="../../assets/logo/logo-dennis-schneider-2.svg" id="logo" />
-  <div
-    id="burger"
-    [className]="menuVisible ? 'btn active' : 'btn not-active'"
-    (click)="toggleMenu()"
-  >
+  <a href="../../index.html"> <img src="../../assets/logo/logo-dennis-schneider-2.svg" id="logo" /></a>
+  <div id="burger" [className]="menuVisible ? 'btn active' : 'btn not-active'" (click)="toggleMenu()">
     <span></span>
     <span></span>
     <span></span>
@@ -15,28 +11,31 @@
     <div class="menu-item">
       <p>About me</p>
       <div class="border-left"></div>
-      <div class="border-bottom"></div></div
-  ></a>
+      <div class="border-bottom"></div>
+    </div>
+  </a>
   <a class="mailto" (click)="toggleMenu()" href="#myskills">
     <div class="menu-item">
       <p>My skills</p>
       <div class="border-left"></div>
-      <div class="border-bottom"></div></div
-  ></a>
+      <div class="border-bottom"></div>
+    </div>
+  </a>
   <a class="mailto" (click)="toggleMenu()" href="#portfolio">
     <div class="menu-item">
       <p>Portfolio</p>
       <div class="border-left"></div>
-      <div class="border-bottom"></div></div
-  ></a>
+      <div class="border-bottom"></div>
+    </div>
+  </a>
   <div class="menu-footer">
     <div class="black-corner"></div>
     <div class="menu-footer-content">
       <div class="menu-footer-l">
         <h2>Say Hi!</h2>
-        <a class="mailto" href="mailto:dennis@its-visible.de"
-          ><p>dennis@its-visible.de</p></a
-        >
+        <a class="mailto" href="mailto:dennis@its-visible.de">
+          <p>dennis@its-visible.de</p>
+        </a>
       </div>
       <div class="menu-footer-r">
         <img src="../../assets/icons/contact-git.svg" />

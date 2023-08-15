@@ -27,13 +27,13 @@ h2 {
   font-family: Syne;
   font-style: normal;
   font-weight: 800;
-  font-size: 78px;
+  font-size: clamp(1rem, -0.02rem + 5.44vw, 4.875rem);
   padding: 0 0 50px 0;
 }
 
 h3 {
   font-family: Syne;
-  font-size: 45px;
+  font-size: clamp(1rem, 0.523rem + 2.54vw, 2.813rem);
   font-weight: 800;
   line-height: 45px;
   letter-spacing: 0em;
@@ -90,6 +90,18 @@ button {
 .mailto {
   text-decoration: none;
   color: unset;
+}
+
+.pointer {
+  cursor: pointer;
+}
+
+.gap-s {
+  gap: 10px;
+}
+
+.gap-m {
+  gap: 25px;
 }
 
 /* syne-regular - latin */
