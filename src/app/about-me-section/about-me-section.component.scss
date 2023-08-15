@@ -24,20 +24,4 @@ section {
       }
     }
   }
-  .arrow-div {
-    width: 100%;
-    display: flex;
-    position: relative;
-    top: 0;
-    right: 0;
-    left: 0;
-  }
-
-  .arrow {
-    position: absolute;
-    top: 0;
-    right: 0;
-    transform: rotate(45deg);
-    height: 150px;
-  }
 }

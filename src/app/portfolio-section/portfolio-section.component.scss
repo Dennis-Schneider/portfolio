@@ -2,7 +2,7 @@
   display: flex;
   flex-direction: column;
   max-width: 100vw;
-  padding: 0 100px;
+  padding: 50px 100px 0 100px;
   gap: 100px;
   .headline {
     width: 50vw;
@@ -101,6 +101,10 @@
       }
     }
   }
+}
+
+.arrow-m-div {
+  top: -100px;
 }
 
 a {
