@@ -1,5 +1,5 @@
 section {
-  padding: 150px 100px 0 100px;
+  padding: 150px clamp(5px, 5vw, 100px) 0 clamp(5px, 5vw, 100px);
   height: 100vh;
   display: flex;
   justify-content: space-around;
@@ -8,6 +8,7 @@ section {
   margin: auto;
   overflow-y: hidden;
   .headline {
+    width: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -16,7 +17,7 @@ section {
     margin: 0 auto;
     .name-line {
       width: 100%;
-      padding: 0 80px;
+      padding: 0 clamp(10px, 10vw, 80px);
       justify-content: space-around;
       align-items: center;
       gap: 15px;
@@ -28,7 +29,7 @@ section {
       p {
         font-family: "Overpass", sans-serif;
         font-weight: 700;
-        font-size: 48px;
+        font-size: clamp(0.75rem, -0.054rem + 4.8vw, 3rem);
         min-width: fit-content;
         color: var(--blue);
       }

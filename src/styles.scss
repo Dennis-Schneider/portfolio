@@ -17,7 +17,8 @@
 
 h1 {
   font-family: "Syne";
-  font-size: clamp(1.625rem, -0.196rem + 9.11vw, 8rem);
+  font-size: clamp(2.25rem, 0.196rem + 10.95vw, 8rem);
+  letter-spacing: -1.5pt;
   font-weight: 800;
   text-align: center;
   line-height: 90%;
@@ -27,7 +28,7 @@ h2 {
   font-family: Syne;
   font-style: normal;
   font-weight: 800;
-  font-size: clamp(1rem, -0.02rem + 5.44vw, 4.875rem);
+  font-size: clamp(2rem, 0.973rem + 5.48vw, 4.875rem);
   padding: 0 0 50px 0;
   &:hover {
     color: var(--blue);
@@ -248,4 +249,25 @@ button {
 ::-webkit-scrollbar-thumb {
   background: var(--blue);
   border-radius: 10px;
+}
+
+@media only screen and (max-width: 600px) {
+  .d-none-mobile {
+    display: none;
+  }
+  #aboutme {
+    .content {
+      flex-direction: column;
+    }
+  }
+  #myskills {
+    .headline-skills {
+      margin-bottom: -70px;
+    }
+  }
+  #portfolio {
+    .project {
+      flex-direction: column;
+    }
+  }
 }
