@@ -6,7 +6,7 @@
 .footer-container {
   display: flex;
   justify-content: space-between;
-  align-items: end;
+  align-items: flex-end;
   margin: auto;
   height: 150px;
   padding: 0 100px;
@@ -25,13 +25,13 @@
 .col-r {
   display: flex;
   flex-direction: column;
-  align-items: flex-end;
-  justify-content: end;
+  align-items: flex-flex-end;
+  justify-content: flex-end;
 }
 
 .sm-icons {
   display: flex;
-  justify-content: end;
+  justify-content: flex-end;
   img {
     filter: brightness(1);
   }

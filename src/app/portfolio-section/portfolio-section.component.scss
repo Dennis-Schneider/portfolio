@@ -81,7 +81,7 @@
     .column-2 {
       display: flex;
       flex-direction: column;
-      align-items: end;
+      align-items: flex-end;
       text-align: end;
       right: -2%;
       width: clamp(280px, 50%, 800px);
