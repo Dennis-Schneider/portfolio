@@ -44,6 +44,12 @@ h3 {
   text-align: left;
 }
 
+a {
+  text-decoration: none;
+  cursor: pointer;
+  color: unset;
+}
+
 body {
   background-color: var(--cream);
 }
@@ -60,6 +66,7 @@ button {
   font-size: 23px;
   width: fit-content;
   transition: padding ease 0.3s;
+  cursor: pointer;
 
   &:hover {
     padding: 20px 70px 20px 70px;
@@ -256,20 +263,32 @@ button {
     display: none;
   }
   #aboutme {
+    padding-top: 25px;
+    padding-bottom: 25px;
     .content {
       flex-direction: column;
     }
   }
   #myskills {
+    padding-top: 80px;
+    padding-bottom: 25px;
     .headline-skills {
       margin-bottom: -70px;
     }
   }
   #portfolio {
+    padding-top: 25px;
+    padding-bottom: 25px;
+    gap: 50px;
+    .headline {
+      padding-top: 25px !important;
+      padding-bottom: 25px !important;
+    }
     .project,
     .reverse {
       flex-direction: column !important;
-      filter: saturate(1);
+      filter: saturate(1) !important;
+      gap: 20px !important;
       .outline-left,
       .outline-right {
         border: none !important;
@@ -284,6 +303,11 @@ button {
     }
     .buttons {
       flex-direction: column;
+    }
+  }
+  #contact {
+    button {
+      padding: 20px 30px;
     }
   }
   #footer {

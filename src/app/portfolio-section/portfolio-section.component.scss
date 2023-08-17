@@ -20,6 +20,9 @@
     width: clamp(80%, 100%, 1440px);
     margin: auto;
     gap: 80px;
+    .project-img-div {
+      box-shadow: 0 0 5px 2.5px rgba(0, 0, 0, 0.3);
+    }
     filter: saturate(0);
     &:hover {
       filter: saturate(1);
@@ -105,11 +108,6 @@
 
 .arrow-m-div {
   top: -100px;
-}
-
-a {
-  text-decoration: none;
-  color: unset;
 }
 
 .github-icon {

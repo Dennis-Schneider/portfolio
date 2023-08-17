@@ -5,6 +5,9 @@ section {
   .content {
     display: flex;
     gap: 90px;
+    a {
+      text-decoration: none;
+    }
 
     #am-image {
       position: relative;
