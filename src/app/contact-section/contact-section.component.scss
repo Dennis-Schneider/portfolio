@@ -120,12 +120,12 @@ button {
 
 input[required]:valid,
 textarea[required]:valid {
-  background: #f3f8ed url(./../../assets/icons/input-okay.svg) no-repeat center
+  background: #f3f8ed url(../../assets/icons/input-okay.svg) no-repeat center
     right 3%;
 }
 
 input[required]:invalid:not(:placeholder-shown),
 textarea[required]:invalid:not(:placeholder-shown) {
-  background: #f3f8ed url(./../../assets/icons/required.svg) no-repeat center
+  background: #f3f8ed url(../../assets/icons/required.svg) no-repeat center
     right 3%;
 }
